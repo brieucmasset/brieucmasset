@@ -42,9 +42,13 @@ body {
   overflow-y: scroll;
   font-family: 'Source Sans Pro', sans-serif; }
 
+strong {
+    color: #d90429;
+  }
+
 a {
   text-decoration: none;
-  color: #f85e4e; }
+  color: #ef233c; }
 
 li {
   list-style: none; }
@@ -98,14 +102,14 @@ textarea {
     color: #212529; }
     .heading-sec__main--lt::after {
       content: '';
-      background: #70e000 !important; }
+      background: #ef233c !important; }
   .heading-sec__main::after {
     content: '';
     position: absolute;
     top: calc(100% + 1.5rem);
     height: 5px;
     width: 3rem;
-    background: #70e000;
+    background: #ef233c;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px; }
@@ -139,7 +143,7 @@ textarea {
   width: 92%; }
 
 .btn {
-  background: #70e000;
+  background: #ef233c;
   color: #eee;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -157,12 +161,12 @@ textarea {
     padding: 1.5rem 5rem;
     font-size: 1.6rem; }
   .btn--theme {
-    background: #70e000;
+    background: #ef233c;
     color: #fff; }
   .btn--theme-inv {
-    color: #70e000;
+    color: #ef233c;
     background: #fff;
-    border: 2px solid #70e000;
+    border: 2px solid #ef233c;
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px); }
 
@@ -224,7 +228,7 @@ textarea {
     border-bottom: 2px solid #212529;
     transition: background .3s; }
     .home-hero__social-icon-link:hover {
-      background: rgba(255, 255, 255, 0.1); }
+      background: rgba(239, 35, 60, 0.7); }
     .home-hero__social-icon-link--bd-none {
       border-bottom: 0; }
   .home-hero__social-icon {
@@ -520,14 +524,14 @@ textarea {
     color: #333;
     transition: color .3s; }
     .header__logo-container:hover {
-      color: #70e000; }
+      color: #ef233c; }
   .header__logo-img-cont {
     width: 5rem;
     height: 5rem;
     border-radius: 50px;
     overflow: hidden;
     margin-right: 1.5rem;
-    background: #70e000; }
+    background: #ef233c; }
     @media only screen and (max-width: 56.25em) {
       .header__logo-img-cont {
         width: 4.5rem;
@@ -559,7 +563,7 @@ textarea {
     font-weight: 700;
     transition: color .3s; }
     .header__link:hover {
-      color: #70e000; }
+      color: #ef233c; }
     @media only screen and (max-width: 56.25em) {
       .header__link {
         padding: 3rem 1.8rem;
@@ -606,7 +610,7 @@ textarea {
     letter-spacing: 2px;
     transition: color .3s; }
     .header__sm-menu-link a:hover {
-      color: #70e000; }
+      color: #ef233c; }
   .header__sm-menu-link:first-child a {
     border-top: 1px solid #eee; }
   .header__sm-menu-link-last {
@@ -676,6 +680,9 @@ textarea {
     border-radius: 5px;
     font-weight: 600;
     color: #777; }
+    .skills__skill:hover {
+      color: #ef233c;
+    }
 
 .mouse {
   width: 25px;
