@@ -51,16 +51,20 @@ body {
   font-family: sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 strong {
-  color: #d90429;
+  color: #666;
 }
 
 a {
   text-decoration: none;
-  color: #ef233c;
+}
+
+.about__content-details-para a strong {
+  text-decoration: underline;
+  color: #7843e9;
 }
 
 li {
@@ -134,17 +138,17 @@ textarea {
 }
 
 .heading-sec__main--lt::after {
-  content: '';
-  background: #ef233c !important;
+  content: "";
+  background: #7843e9 !important;
 }
 
 .heading-sec__main::after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(100% + 1.5rem);
   height: 5px;
   width: 3rem;
-  background: #ef233c;
+  background: #7843e9;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
@@ -190,7 +194,7 @@ textarea {
 }
 
 .btn {
-  background: #ef233c;
+  background: #7843e9;
   color: #eee;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -198,7 +202,7 @@ textarea {
   font-weight: 700;
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .btn:hover {
@@ -216,16 +220,20 @@ textarea {
 }
 
 .btn--theme {
-  background: #ef233c;
+  background: #7843e9;
   color: #fff;
 }
 
 .btn--theme-inv {
-  color: #ef233c;
+  color: #7843e9;
   background: #fff;
-  border: 2px solid #ef233c;
+  border: 2px solid #7843e9;
   box-shadow: none;
   padding: calc(1.5rem - 2px) calc(5rem - 2px);
+}
+
+.project-details__links {
+  margin: 0 0;
 }
 
 .sec-pad {
@@ -258,7 +266,12 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(245, 245, 245, .8), rgba(245, 245, 245, .8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url(../../assets/svg/common-bg.svg);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -276,10 +289,10 @@ textarea {
 .home-hero__socials {
   position: absolute;
   top: 50%;
-  border-top: 2px solid #212529;
-  border-right: 2px solid #212529;
-  border-left: 2px solid #212529;
   transform: translateY(-50%);
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  padding: 0.5rem;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -309,12 +322,12 @@ textarea {
   width: 100%;
   display: block;
   padding: 1.2rem;
-  border-bottom: 2px solid #212529;
-  transition: background .3s;
+  transition: background 0.3s;
+  border-radius: 5px;
 }
 
 .home-hero__social-icon-link:hover {
-  background: rgba(239, 35, 60, 0.7);
+  background: rgba(120, 67, 233, 0.3);
 }
 
 .home-hero__social-icon-link--bd-none {
@@ -476,7 +489,12 @@ textarea {
 }
 
 .contact {
-  background: linear-gradient(to right, rgba(245, 245, 245, .8), rgba(245, 245, 245, .8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
 }
@@ -589,7 +607,12 @@ textarea {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(245, 245, 245, .8), rgba(245, 245, 245, .8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -734,6 +757,7 @@ textarea {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 5rem;
+  background-color: #18181b;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -747,11 +771,11 @@ textarea {
   align-items: center;
   cursor: pointer;
   color: #333;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
 .header__logo-container:hover {
-  color: #ef233c;
+  color: #7843e9;
 }
 
 .header__logo-img-cont {
@@ -760,7 +784,7 @@ textarea {
   border-radius: 50px;
   overflow: hidden;
   margin-right: 1.5rem;
-  background: #ef233c;
+  background: #7843e9;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -784,6 +808,12 @@ textarea {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
+  color: #edf6f9;
+  transition: color 0.3s;
+}
+
+.header__logo-sub:hover {
+  color: #7843e9;
 }
 
 .header__links {
@@ -800,15 +830,15 @@ textarea {
   padding: 2.2rem 3rem;
   display: inline-block;
   font-size: 1.6rem;
-  color: #333;
+  color: #edf6f9;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
 .header__link:hover {
-  color: #ef233c;
+  color: #7843e9;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -845,7 +875,7 @@ textarea {
   top: 100%;
   visibility: hidden;
   opacity: 0;
-  transition: all .3s;
+  transition: all 0.3s;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
@@ -874,11 +904,11 @@ textarea {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
 .header__sm-menu-link a:hover {
-  color: #ef233c;
+  color: #7843e9;
 }
 
 .header__sm-menu-link:first-child a {
@@ -890,8 +920,8 @@ textarea {
 }
 
 .main-footer {
-  background: #212529;
-  color: #fff;
+  background: #18181b;
+  color: #edf6f9;
 }
 
 .main-footer__upper {
@@ -936,7 +966,7 @@ textarea {
 
 .main-footer__short-desc {
   margin-top: 2rem;
-  color: #eee;
+  color: #edf6f9;
   font-size: 1.5rem;
   line-height: 1.7;
 }
@@ -957,7 +987,7 @@ textarea {
 .main-footer__lower {
   padding: 4rem 0;
   border-top: 1px solid #444;
-  color: #eee;
+  color: #edf6f9;
   font-size: 1.2rem;
   text-align: left;
   text-align: center;
@@ -965,7 +995,8 @@ textarea {
 
 .main-footer__lower a {
   text-decoration: underline;
-  font-weight: bold;
+  font-weight: 700;
+  color: #edf6f9;
   margin-left: 2px;
 }
 
@@ -989,12 +1020,12 @@ textarea {
   border-radius: 5px;
   font-weight: 600;
   color: #777;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .skills__skill:hover {
-  transform: translateY(-3px);
-  color: #ef233c;
+  color: #7843e9;
+  transition: 0.3s;
 }
 
 .mouse {
@@ -1007,7 +1038,7 @@ textarea {
 }
 
 .mouse::before {
-  content: '';
+  content: "";
   width: 5px;
   height: 5px;
   position: absolute;
