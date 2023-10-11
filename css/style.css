@@ -1000,6 +1000,11 @@ textarea {
   margin-left: 2px;
 }
 
+.main-footer__lower a:hover {
+  color: #7843e9;
+  transition: 0.3s;
+}
+
 @media only screen and (max-width: 56.25em) {
   .main-footer__lower {
     padding: 3.5rem 0;
