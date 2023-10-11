@@ -6,7 +6,7 @@ form.addEventListener("submit", function (event) {
   const formData = new FormData(form);
 
   const xhr = new XMLHttpRequest();
-  const url = "https://brieucmasset.github.io/envoyer-mail"; // Mettez à jour l'URL si nécessaire
+  const url = "https://brieucmasset.github.io/envoyer-mail";
   xhr.open("POST", url, true);
 
   xhr.onload = function () {
