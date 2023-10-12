@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Brieuc Masset - Acceuil</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Brieuc Masset - Acceuil</title>
+    <link rel="stylesheet" href="css/style.css" />
 
-  <link rel="stylesheet" href="css/style.css" />
-
-  <script src="https://kit.fontawesome.com/ebdabb6c88.js" crossorigin="anonymous"></script>
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/png/favicon__b-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-    rel="stylesheet" />
-</head>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/png/favicon__b-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
 <body>
+  <!-- HEADER -->
   <header class="header">
     <div class="header__content">
       <div class="header__logo-container">
@@ -70,6 +76,8 @@
       </div>
     </div>
   </header>
+
+  <!-- HOME HERO SECTION -->
   <section class="home-hero">
     <div class="home-hero__content">
       <h1 class="heading-primary">Hey, je suis Brieuc Masset</h1>
@@ -93,11 +101,18 @@
           <img src="./assets/png/github-ico.png" alt="icon" class="home-hero__social-icon" />
         </a>
       </div>
+      <div class="home-hero__social">
+        <a target="_blank" href="mailto:brieuc.masset78@gmail.com" rel="noreferrer" class="home-hero__social-icon-link">
+          <img src="./assets/svg/contact-mail.svg" alt="icon" class="home-hero__social-icon" />
+        </a>
+      </div>
     </div>
     <div class="home-hero__mouse-scroll-cont">
       <div class="mouse"></div>
     </div>
   </section>
+
+  <!-- ABOUT SECTION -->
   <section id="about" class="about sec-pad">
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-med">
@@ -150,6 +165,8 @@
       </div>
     </div>
   </section>
+
+  <!-- PROJECTS SECTION -->
   <section id="projects" class="projects sec-pad">
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-bg">
@@ -190,6 +207,8 @@
     </div>
     </div>
   </section>
+
+  <!-- CONTACT SECTION -->
   <section id="contact" class="contact sec-pad dynamicBg">
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-med">
@@ -199,10 +218,10 @@
         </span>
       </h2>
       <div class="contact__form-container">
-        <form id="contactForm" class="contact__form" method="POST">
+        <form class="contact__form" method="POST">
           <div class="contact__form-field">
             <label class="contact__form-label" for="name">Nom</label>
-            <input required placeholder="Votre nom" type="text" class="contact__form-input" name="name" id="name" />
+            <input required placeholder="Votre Nom" type="text" class="contact__form-input" name="name" id="name" />
           </div>
           <div class="contact__form-field">
             <label class="contact__form-label" for="email">Email</label>
@@ -220,6 +239,8 @@
       </div>
     </div>
   </section>
+
+  <!-- FOOTER -->
   <footer class="main-footer">
     <div class="main-container">
       <div class="main-footer__upper">
@@ -233,6 +254,9 @@
             </a>
             <a target="_blank" rel="noreferrer" href="https://github.com/brieucmasset">
               <img class="main-footer__icon" src="./assets/png/github-ico-white.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="mailto:brieuc.masset78@gmail.com" style="filter: invert(1);">
+              <img class="main-footer__icon" src="./assets/svg/contact-mail.svg" alt="icon" />
             </a>
           </div>
         </div>
@@ -249,8 +273,8 @@
     </div>
   </footer>
 
+  <!-- SCRIPT -->
   <script src="./index.js"></script>
-  <script src="./contact.js"></script>
 </body>
 
 </html>
