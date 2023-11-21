@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Symfony School - Projets</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/png/favicon__b-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/jpeg/profilpic.jpeg"
+              alt="Brieuc Masset Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Brieuc Masset</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link">Accueil</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">À propos</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">Projets</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link">Contact</a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html">Accueil</a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about">À propos</a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects">Projets</a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- PROJECT HERO SECTION -->
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Symfony School</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">Application de gestion de cours</p>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a
+            href="https://github.com/brieucmasset/project/tree/main/symfonyschool"
+            class="btn btn--bg"
+            target="_blank"
+            >Lien Github</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT DETAILS SECTION -->
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="/assets/png/symfonyschool.png"
+              alt="Image du projet"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Aperçu du projet</h3>
+              <p class="project-details__desc-para">
+                Cette application de gestion de cours a été développée avec le
+                framework <strong>Symfony</strong> et utilise une base de
+                données <strong>MySQL</strong>. Son objectif est de permettre à
+                l'administrateur de gérer les étudiants, les salles de cours, et
+                les professeurs de manière efficace.
+              </p>
+              <p class="project-details__desc-para">
+                Les professeurs sont associés à une salle de cours, tandis que
+                les étudiants sont liés à une discipline. L'administrateur peut
+                gérer ces associations et effectuer des actions telles que
+                l'ajout d'un nouvel étudiant, la modification des détails d'un
+                professeur, ou la consultation des informations d'une salle de
+                cours.
+              </p>
+              <p class="project-details__desc-para">
+                Cette application offre une interface conviviale pour gérer les
+                composants clés d'une institution éducative, en utilisant les
+                fonctionnalités puissantes du framework Symfony et une base de
+                données MySQL pour stocker les informations essentielles.
+              </p>
+            </div>
+
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">
+                Technologies et langages utilisés
+              </h3>
+              <div class="skills">
+                <div class="skills__skill">PHP</div>
+                <div class="skills__skill">Symfony</div>
+                <div class="skills__skill">MySQL</div>
+                <div class="skills__skill">Bootstrap</div>
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">Twig</div>
+              </div>
+            </div>
+            <div class="project-details__links">
+              <a
+                href="https://github.com/brieucmasset/project/tree/main/symfonyschool"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+                rel="noreferrer"
+                >Lien Github</a
+              >
+              <a
+                href="/index.html#projects"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                >Retour</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Réseaux</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/brieuc-masset/"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico-white.png"
+                  alt="icon"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/brieucmasset"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico-white.png"
+                  alt="icon"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="mailto:brieuc.masset78@gmail.com"
+                style="filter: invert(1)"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/svg/contact-mail.svg"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Brieuc Masset</h4>
+            <p class="main-footer__short-desc">
+              Développeur Back-End PHP Symfony
+            </p>
+          </div>
+        </div>
+        <div class="main-footer__lower">
+          &copy; Copyright 2023. Crée par
+          <a href="https://brieucmasset.github.io/">Brieuc Masset</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="./index.js"></script>
+  </body>
+</html>
